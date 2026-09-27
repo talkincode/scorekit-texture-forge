@@ -1,0 +1,58 @@
+schema_version: 1
+name: nature-forest-ambience
+description: Natural wilderness textures including continuous rain, pine canopy breeze, distant thunder roll, and forest floor snaps
+library: mrt2-nature-forest@1.0.0
+engine: mock
+
+items:
+  - id: forest_rain_bed
+    prompt: "gentle steady summer rain falling on lush green forest foliage, soothing continuous white noise"
+    description: "Gentle continuous summer forest rain bed"
+    category: organic
+    tags: [rain, water, forest, calm, weather]
+    playback:
+      modes: [loop]
+      default_mode: loop
+    use_cases: [forest, nocturnal, weather, peaceful]
+    duration_sec: 24.0
+    gain: 0.55
+    seed: 501
+
+  - id: pine_canopy_wind
+    prompt: "soft alpine wind blowing through tall pine needles with gentle pitch modulation"
+    description: "Soft nocturnal wind through pine trees"
+    category: ambience
+    tags: [wind, breeze, pine, atmospheric]
+    playback:
+      modes: [loop]
+      default_mode: loop
+    use_cases: [mountain, forest, travel, mystery]
+    duration_sec: 20.0
+    gain: 0.45
+    seed: 502
+
+  - id: distant_thunder
+    prompt: "deep muffled distant thunder rumbling across dark mountain valley"
+    description: "Deep rolling distant thunder boom"
+    category: impact
+    tags: [thunder, storm, deep, rumble]
+    playback:
+      modes: [one_shot]
+      default_mode: one_shot
+    use_cases: [storm, climax, danger, tension]
+    duration_sec: 6.0
+    gain: 0.8
+    seed: 503
+
+  - id: forest_twig_snap
+    prompt: "crisp dry twig snap on mossy forest ground, clean transient"
+    description: "Sharp dry branch snap"
+    category: foley
+    tags: [wood, snap, footsteps, nature]
+    playback:
+      modes: [one_shot]
+      default_mode: one_shot
+    use_cases: [stealth, alert, forest, explore]
+    duration_sec: 2.0
+    gain: 0.85
+    seed: 504

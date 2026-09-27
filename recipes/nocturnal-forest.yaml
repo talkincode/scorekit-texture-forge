@@ -1,0 +1,32 @@
+schema_version: 1
+name: nocturnal-forest-ambience
+description: Gentle nocturnal forest wind, leaf rustle, and sparse wilderness presence
+library: mrt2-nocturnal-forest@1.0.0
+engine: auto
+
+items:
+  - id: forest_night_wind
+    prompt: "gentle night breeze rustling through dense pine canopy, soothing and continuous"
+    description: "Continuous nocturnal pine wind"
+    category: ambience
+    tags: [wind, night, forest, calm]
+    playback:
+      modes: [loop]
+      default_mode: loop
+    use_cases: [forest, nocturnal, peace]
+    duration_sec: 20.0
+    gain: 0.5
+    seed: 301
+
+  - id: twig_snap
+    prompt: "single dry wooden branch snap in silent forest floor"
+    description: "Crisp dry twig snapping"
+    category: organic
+    tags: [wood, snap, footsteps, nature]
+    playback:
+      modes: [one_shot]
+      default_mode: one_shot
+    use_cases: [forest, mystery, alert]
+    duration_sec: 2.0
+    gain: 0.8
+    seed: 302

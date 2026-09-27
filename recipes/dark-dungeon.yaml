@@ -1,0 +1,32 @@
+schema_version: 1
+name: dark-dungeon-ambience
+description: Ominous stone corridor ambience, water drips, and resonant metallic scrapes
+library: mrt2-dark-dungeon@1.0.0
+engine: auto
+
+items:
+  - id: dungeon_room_tone
+    prompt: "hollow subterranean cavern room tone with distant low hum"
+    description: "Cold subterranean room tone"
+    category: ambience
+    tags: [cavern, room_tone, cold, dark]
+    playback:
+      modes: [loop]
+      default_mode: loop
+    use_cases: [dungeon, horror, stealth]
+    duration_sec: 18.0
+    gain: 0.65
+    seed: 201
+
+  - id: water_drip
+    prompt: "clear single water droplet falling onto cold stone surface"
+    description: "Sharp cavern water drop"
+    category: organic
+    tags: [water, droplet, echo, subterranean]
+    playback:
+      modes: [one_shot]
+      default_mode: one_shot
+    use_cases: [dungeon, cave, suspense]
+    duration_sec: 3.5
+    gain: 0.75
+    seed: 202

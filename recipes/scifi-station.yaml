@@ -1,0 +1,36 @@
+schema_version: 1
+name: scifi-station-ambience
+description: Neural atmospheric textures for abandoned space station exploration
+library: mrt2-scifi-station@1.0.0
+engine: auto
+
+defaults:
+  temperature: 0.9
+  cfg_musiccoca: 4.0
+
+items:
+  - id: reactor_hum
+    prompt: "deep continuous sub drone, dark industrial space station engine rumble"
+    description: "Low-frequency steady reactor rumble"
+    category: industrial
+    tags: [drone, engine, low_end, continuous]
+    playback:
+      modes: [loop]
+      default_mode: loop
+    use_cases: [space, station, tension]
+    duration_sec: 16.0
+    gain: 0.8
+    seed: 101
+
+  - id: airlock_hiss
+    prompt: "sudden pneumatic airlock pressure release hiss and metallic clamp latch"
+    description: "Pneumatic air pressure release"
+    category: impact
+    tags: [pneumatic, hiss, mechanical]
+    playback:
+      modes: [one_shot]
+      default_mode: one_shot
+    use_cases: [space, door, transition]
+    duration_sec: 4.0
+    gain: 0.7
+    seed: 102

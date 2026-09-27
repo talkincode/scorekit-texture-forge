@@ -1,0 +1,58 @@
+schema_version: 1
+name: birds-nature-ambience
+description: Avian wildlife recordings forged via MRT2, including dawn chorus loop and discrete bird calls
+library: mrt2-birds@1.0.0
+engine: mock
+
+items:
+  - id: dawn_chorus_loop
+    prompt: "rich early morning dawn chorus with multiple wild birds chirping and singing in spring forest canopy, peaceful and continuous"
+    description: "Continuous forest dawn chorus with layered bird chirps"
+    category: organic
+    tags: [birds, dawn, singing, forest, wildlife]
+    playback:
+      modes: [loop]
+      default_mode: loop
+    use_cases: [forest, morning, peaceful, nature]
+    duration_sec: 24.0
+    gain: 0.6
+    seed: 601
+
+  - id: cuckoo_solo_call
+    prompt: "distinct double-tone cuckoo bird call in quiet alpine forest, clear resonance"
+    description: "Clear two-note cuckoo bird call"
+    category: organic
+    tags: [birds, cuckoo, solo, woods]
+    playback:
+      modes: [one_shot]
+      default_mode: one_shot
+    use_cases: [forest, travel, spring, peace]
+    duration_sec: 3.5
+    gain: 0.8
+    seed: 602
+
+  - id: eagle_screech
+    prompt: "lone hawk or eagle sharp majestic screech high above mountain valley with natural cliff echo"
+    description: "Sharp mountain raptor screech with distant echo"
+    category: organic
+    tags: [birds, eagle, hawk, screech, majestic]
+    playback:
+      modes: [one_shot]
+      default_mode: one_shot
+    use_cases: [mountain, aerial, wilderness, epic]
+    duration_sec: 4.0
+    gain: 0.85
+    seed: 603
+
+  - id: nightingale_trill
+    prompt: "gentle melodic nightingale nocturnal warble and trill in midnight garden"
+    description: "Soft lyrical nightingale night trill"
+    category: organic
+    tags: [birds, nightingale, nocturnal, trill, lyrical]
+    playback:
+      modes: [one_shot]
+      default_mode: one_shot
+    use_cases: [night, romantic, garden, calm]
+    duration_sec: 4.5
+    gain: 0.75
+    seed: 604
